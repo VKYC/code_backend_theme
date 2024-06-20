@@ -136,7 +136,7 @@ a.btn {
 .o_control_panel {
     border-bottom: none important;
     margin: 15px 15px 0 15px;
-    background-color: #ffffff !important;
+    background-color: #efefef !important;
     -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03) !important;
     box-shadow: 0 0.75rem 1.5rem rgba(18,38,63, .03) !important;
     border-radius: 5px;
@@ -395,14 +395,15 @@ th.o_list_record_selector {
     text-align: left !important;
 }
 .o_list_view .o_list_table thead > tr > th:not(.o_list_record_selector) {
-    border-left: none !important;
+    border-left: 1px double #c8c8d3 !important;
+    border-right: 1px solid #dfdfdf;
 }
 .table thead th {
     vertical-align: bottom;
     border-bottom: none;
 }
 .table th {
-    border-top: 1px solid #fff !important;
+    border-top: 1px solid #c8c8d3 !important;
 }
 .o_list_view .o_list_table tfoot {
     background-color: #fff !important;
@@ -592,7 +593,7 @@ th.o_list_record_selector {
 //Discuss
 .o_Discuss {
 	padding: 15px !important;
-	background: #f5f5f9 !important;
+	background: #c8c8d3 !important;
 }
 
 .o_Discuss .o_DiscussSidebar {
@@ -937,17 +938,17 @@ select {
     border-radius: 5px;
     -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03) !important;
     box-shadow: 0 0.75rem 1.5rem rgba(18,38,63, .03) !important;
-    background-color: #f8f8fb;
+    background-color: #c9ccd6;
 }
 .o_action {
-    background: #f8f8fb;
+    background: #c9ccd6;
 }
 //common ends
 
 //kanban_view starts
 .o_kanban_view {
     border-radius: 5px;
-    background: #fff;
+    background: #e6e6e6;
     -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03) !important;
     box-shadow: 0 0.75rem 1.5rem rgba(18,38,63, .03) !important;
 }
@@ -962,7 +963,7 @@ select {
     margin-right: 10px;
 }
 .o_kanban_view.o_kanban_grouped {
-    background-color: #f8f8fb;
+    background-color: #e3e3e3;
 }
 .o_kanban_view.o_kanban_grouped .o_kanban_record, .o_kanban_view.o_kanban_grouped .o_kanban_quick_create {
     border-radius: 5px;
@@ -1260,7 +1261,7 @@ select, input {
     color: #f46a6a !important;
 }
 .text-success {
-    color: #34c38f !important;
+    color: #151515 !important;
 }
 //stock icon colors ends
 
@@ -1634,4 +1635,31 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
 //new fix
 .o_form_view .oe_button_box + .oe_title, .o_form_view .oe_button_box + .oe_avatar + .oe_title {
     width: 100% !important;
+}
+
+
+//new custom holdconect
+.o_kanban_view .o_column_quick_create .o_quick_create_unfolded {
+    margin: 1px 4px 0;
+    padding: 8px 8px;
+    width: 240px;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+
+.o_kanban_view .o_kanban_record, .o_kanban_view .o_kanban_quick_create {
+    padding: 8px 8px;
+    border: 1px solid white;
+    background-color: #f3f3f3;
+}
+
+.o_list_view .o_list_table tbody > tr > td:not(.o_list_record_selector):not(.o_handle_cell):not(.o_list_button):not(.o_state_selection_cell) {
+    display: table-cell;
+    max-width: 100%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
 }
