@@ -396,14 +396,14 @@ th.o_list_record_selector {
 }
 .o_list_view .o_list_table thead > tr > th:not(.o_list_record_selector) {
     border-left: 1px double #c8c8d3 !important;
-    border-right: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf !important;
 }
 .table thead th {
     vertical-align: bottom;
     border-bottom: none;
 }
 .table th {
-    border-top: 1px solid #c8c8d3 !important;
+    border-top: 1px solid #dfdfdf !important;
 }
 .o_list_view .o_list_table tfoot {
     background-color: #fff !important;
@@ -1644,13 +1644,13 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
     padding: 8px 8px;
     width: 240px;
     height: 100%;
-    background-color: #f3f3f3;
+    background-color: #f3f3f3 !important;
 }
 
 .o_kanban_view .o_kanban_record, .o_kanban_view .o_kanban_quick_create {
     padding: 8px 8px;
     border: 1px solid white;
-    background-color: #f3f3f3;
+    background-color: #f3f3f3 !important;
 }
 
 .o_list_view .o_list_table tbody > tr > td:not(.o_list_record_selector):not(.o_handle_cell):not(.o_list_button):not(.o_state_selection_cell) {
@@ -1660,6 +1660,12 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
     overflow: hidden;
     text-overflow: ellipsis;
     vertical-align: top;
-    border-left: 1px solid #dfdfdf;
-    border-right: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf !important;
+    border-right: 1px solid #dfdfdf !important;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dfdfdf !important;
 }
