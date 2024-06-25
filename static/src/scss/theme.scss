@@ -371,7 +371,7 @@ button.fa.fa-external-link.btn.btn-secondary.o_external_button {
     padding: 0.5rem;
 }
 tr.o_data_row {
-    font-size: 15px;
+    font-size: 12px;
 }
 .o_list_view .table-responsive .table thead tr:nth-child(1) th {
     position: sticky;
@@ -787,8 +787,8 @@ a#openSidebar {
 //form
 input {
     display: block;
-    width: 100%;
-    height: 40px !important;
+    width: 3%;
+    height: 20px !important;
     padding: 10px 20px;
     font-size: 13px;
     font-weight: 400;
@@ -853,6 +853,20 @@ select {
 .o_form_view .oe_button_box .oe_stat_button .o_button_icon {
     color: #556ee6;
 }
+
+input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 0;
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: 0.1rem;
+    margin-left: -1.5rem;
+    height: 15px !important;
+}
+
 //form end
 
 //search view
@@ -919,16 +933,16 @@ select {
 ::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.19);
 	border-radius: 10px;
-	background-color: #F5F5F5;
+	background-color: #bbbbbb;
 }
 ::-webkit-scrollbar {
-	width: 12px;
+	width: 15px;
 	background-color: #F5F5F5;
 }
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.2);
-	background-color: #c9ccd6;
+	background-color: #74788d;
 }
 //scrollbar ends
 
