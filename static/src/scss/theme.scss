@@ -796,7 +796,7 @@ input {
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da !important;
+    border: 2px solid #6f6f6f !important;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -818,7 +818,7 @@ select {
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da !important;
+    border: 2px solid #6f6f6f !important;
     border-radius: .25rem;
     -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
@@ -866,6 +866,79 @@ input[type="radio"], input[type="checkbox"] {
     margin-left: -1.5rem;
     height: 15px !important;
 }
+
+.form-check-inline .form-check-input {
+    position: fixed;
+    margin-top: 0;
+    margin-right: 0.3125rem;
+    margin-top: 0.7rem;
+    margin-left: -1.5rem;
+}
+
+
+
+input[type="checkbox"] {
+    display: block;
+    width: 15px;
+    height: 20px;
+    padding: 0;
+    margin-right: 10px;
+    -webkit--webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -moz--webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #6f6f6f !important;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    position: fixed;
+    top: 87px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #556ee6;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+}
+
+.form-check-label {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    cursor: pointer;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 0;
+    width: 15px;
+}
+
+input[type="radio"]:checked {
+    background-color: #556ee6;
+}
+
+input[type="radio"]:focus {
+    outline: none;
+}
+
+.form-check-label {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    cursor: pointer;
+}
+
 
 //form end
 
