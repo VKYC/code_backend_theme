@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif !important;
-    background-color: #f8f8fb;
+    background-color: #000000;
 }
 a {
     color: $primary_accent;
@@ -1756,3 +1756,13 @@ div.dropdown-menu.bootstrap-datetimepicker-widget {
     vertical-align: top;
     border-top: 1px solid #dfdfdf !important;
 }
+
+body {
+    margin: 0;
+    font-family: "Odoo Unicode Support Noto", "Lucida Grande", Helvetica, Verdana, Arial, sans-serif;
+    font-size: 1.08333333rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    text-align: left;
+    background-color: #f0eeee;
